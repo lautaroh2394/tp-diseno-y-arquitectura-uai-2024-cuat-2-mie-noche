@@ -1,0 +1,11 @@
+{
+  "name": "populate_db_script",
+  "version": "1.0.0",
+  "main": "generate-script.js",
+  "scripts": {
+    "generate": "node generate-script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
