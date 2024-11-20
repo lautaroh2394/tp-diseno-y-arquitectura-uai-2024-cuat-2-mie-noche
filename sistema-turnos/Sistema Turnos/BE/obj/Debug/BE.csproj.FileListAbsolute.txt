@@ -1,0 +1,6 @@
+D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\BE\bin\Debug\BE.dll
+D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\BE\bin\Debug\BE.pdb
+D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\BE\obj\Debug\BE.dll
+D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\BE\obj\Debug\BE.pdb

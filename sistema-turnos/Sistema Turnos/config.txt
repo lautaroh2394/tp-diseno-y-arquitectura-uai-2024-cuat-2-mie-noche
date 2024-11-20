@@ -1,0 +1,1 @@
+CONNECTION_STRING==Server=WINDOWS-J8OE48L\\SQLEXPRESS;Database=sistema_turnos;Trusted_Connection=True;
