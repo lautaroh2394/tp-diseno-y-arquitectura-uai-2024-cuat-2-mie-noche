@@ -22,7 +22,7 @@ namespace GUI
         {
             if (DAL.Authenticator.Authenticate(inputUser.Text, inputPassword.Text))
             {
-                DAL.SessionManager.SetCurrentUser(inputUser.Text);
+                DAL.SessionManager.SetCurrentUserByUsername(inputUser.Text);
                 this.Close();
             }
             else

@@ -18,7 +18,7 @@ namespace DAL
             return SessionManager.instance;
         }
 
-        public static void SetCurrentUser(string username)
+        public static void SetCurrentUserByUsername(string username)
         {
             SessionManager.GetInstance().InstanceSetCurrentUser(username);
         }

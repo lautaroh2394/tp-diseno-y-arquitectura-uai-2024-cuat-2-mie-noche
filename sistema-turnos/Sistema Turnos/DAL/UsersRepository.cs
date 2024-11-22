@@ -13,7 +13,7 @@ namespace DAL
     public class UserCommands
     {
         public static string GET_USER_PERMISSIONS = "get_user_permissions";
-        public static string GET_USERS_FROM_VIEW_BY_ID = "SELECT TOP 1 * from users_view where id = @id";
+        public static string GET_USER_BY_ID = "SELECT TOP 1 * from users_view where id = @id";
         public static string GET_USER_PERMISSIONS_BY_USERNAME = "SELECT TOP 1 * from users_view where username = @username";
         public static string GET_ALL_USERS_FROM_VIEW = "SELECT * from users_view";
     }
@@ -26,7 +26,7 @@ namespace DAL
 
             object[][] parametersData = new object[][] { new object[] { "id", id } };
             SqlParameter[] parameters = BuildParameters(parametersData);    
-            SqlCommand GetUsersCommand = CreateSqlCommand(UserCommands.GET_USERS_FROM_VIEW_BY_ID, parameters);
+            SqlCommand GetUsersCommand = CreateSqlCommand(UserCommands.GET_USER_BY_ID, parameters);
 
             using (SqlConnection Connection = DBConnectionManager.CreateSqlConnection())
             {

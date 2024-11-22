@@ -11,8 +11,8 @@ namespace GUI
 {
     public class GUICreatorForUser
     {
-        static public object[][] TAB_BUILDERS = {
-            new object[] { "BUSQUEDA", new NextReservationsTabBuilder() }
+        private object[][] tabBuilders = {
+            new object[] { "BUSQUEDA", typeof(NextReservationsTabBuilder) }
             /*
             "RESERVA",
             "CREAR_USUARIO",
@@ -36,9 +36,10 @@ namespace GUI
         {
             List<TabPage> tabPages = new List<TabPage>();
 
-            foreach (object[] TabBuilder in TAB_BUILDERS)
+            foreach (object[] tabBuilder in tabBuilders)
             {
-                TabPageBuilder builder = (TabPageBuilder) TabBuilder[1];
+                Type BuilderClass = (Type) tabBuilder[1];
+                TabPageBuilder builder = (TabPageBuilder) Activator.CreateInstance(BuilderClass);
                 if (builder.ShouldBuild(user))
                 {
                     TabPage control = builder.build(user);
@@ -51,42 +52,37 @@ namespace GUI
 
     internal abstract class TabPageBuilder
     {
-        protected string[] NeededPermissions;
-        protected string UsePermissionShowName;
+        protected string[] neededPermissions;
+        protected string tabName;
         protected abstract UserControl BuildControl();
 
         public TabPage build(BE.User user)
         {
-            string showName = GetTabShowName(user);
-            TabPage newTabPage = new TabPage(showName);
-            Control built = this.BuildControl();
+            TabPage newTabPage = new TabPage(tabName);
+            UserControl built = this.BuildControl();
             newTabPage.Controls.Add(built);
             return newTabPage;
         }
 
         public bool ShouldBuild(BE.User user)
         {
-            return NeededPermissions.All(p => user.permissions.Any((BE.UserPermission up) => up.name.Equals(p)));
-        }
-
-        protected string GetTabShowName(BE.User user)
-        {
-            return user.permissions.Find(
-                up => up.name.Equals(
-                    UsePermissionShowName
-                    )).showName;
+            return neededPermissions.All(p => user.permissions.Any(
+                (BE.UserPermission up) => up.name.Equals(p))
+            );
         }
     }
 
-    internal class NextReservationsTabBuilder
+    internal class NextReservationsTabBuilder : TabPageBuilder
     {
-        protected string[] NeededPermissions = { "BUSQUEDA" };
-        protected string UsePermissionShowName = "BUSQUEDA";
-
-        protected UserControl BuildControl() 
+        public NextReservationsTabBuilder()
         {
-            return new UserControl();
+            neededPermissions = new string[] { "BUSQUEDA" };
+            tabName = "Turnos del día";
         }
 
+        protected override UserControl BuildControl() 
+        {
+            return new NextReservationsControl();
+        }
     }
 }

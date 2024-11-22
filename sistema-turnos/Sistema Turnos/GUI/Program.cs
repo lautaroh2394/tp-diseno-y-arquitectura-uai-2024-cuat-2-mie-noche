@@ -22,8 +22,9 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Login formLogin = new Login();
-            //formLogin.ShowDialog();
-            DAL.SessionManager.SetCurrentUser("admin");
+            bool debug = true;
+            if (debug) DAL.SessionManager.SetCurrentUserByUsername("admin");
+            else formLogin.ShowDialog();
 
             if (DAL.SessionManager.GetCurrentUser() == null) 
                 Application.Exit();
@@ -47,9 +48,11 @@ namespace GUI
             List<BE.UserPermission> userPermissions = new UsersRepository().GetUserPermissions(87);
             Console.WriteLine($"userPermissions : {userPermissions.Count}, {String.Join(", ", userPermissions.Select(p => p.id))}");
 
-            BE.User user = new UsersRepository().GetUser(87);
+            int sqlScriptReexecutions = 2;
+            BE.User user = new UsersRepository().GetUser(127 + (sqlScriptReexecutions * 6));
             Console.WriteLine("username:");
             Console.WriteLine(user.username);
+            Console.WriteLine($"permissions: {string.Join(", ",user.permissions.Select(p => p.showName))}");
             List<User> users = new UsersRepository().GetAllUsers();
             Console.WriteLine($"users: {users.Count}");
             bool isValid = Authenticator.Authenticate("buscador", "buscador");

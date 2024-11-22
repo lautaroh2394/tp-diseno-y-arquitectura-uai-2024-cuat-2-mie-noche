@@ -39,12 +39,7 @@ namespace DAL
                 connection.Open();
                 try
                 {
-                    SqlDataReader Reader = AuthenticateUserCommand.ExecuteReader();
-                    if (!Reader.HasRows) return false;
-                    if (Reader.Read())
-                    {
-                        isValid = Reader.GetBoolean(Reader.GetOrdinal("valid"));
-                    }
+                    isValid = (bool) AuthenticateUserCommand.ExecuteScalar();
                 }
                 catch (Exception ex) 
                 {

@@ -42,10 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authenticator.cs" />
+    <Compile Include="CategoriesRepository.cs" />
     <Compile Include="SessionManager.cs" />
     <Compile Include="SqlInteractor.cs" />
     <Compile Include="UsersRepository.cs" />
-    <Compile Include="Reservation.cs" />
+    <Compile Include="ReservationsRepository.cs" />
     <Compile Include="ConfigManager.cs" />
     <Compile Include="DBConnectionManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

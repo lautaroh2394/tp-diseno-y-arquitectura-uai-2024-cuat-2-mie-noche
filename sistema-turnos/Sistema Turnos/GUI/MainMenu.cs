@@ -15,10 +15,9 @@ namespace GUI
     {
         public MainMenu()
         {
-            InitializeComponent();
-
             TabControl tabControl = (new GUICreatorForUser()).CreateForUser(SessionManager.GetCurrentUser());
             this.Controls.Add(tabControl);
+            InitializeComponent();
         }
     }
 }
