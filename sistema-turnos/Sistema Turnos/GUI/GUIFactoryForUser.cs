@@ -12,7 +12,8 @@ namespace GUI
     public class GUICreatorForUser
     {
         private object[][] tabBuilders = {
-            new object[] { "BUSQUEDA", typeof(NextReservationsTabBuilder) }
+            new object[] { "BUSQUEDA", typeof(NextReservationsTabBuilder) },
+            new object[] { "BUSQUEDA", typeof(SearchReservationsTabBuilder) }
             /*
             "RESERVA",
             "CREAR_USUARIO",
@@ -83,6 +84,20 @@ namespace GUI
         protected override UserControl BuildControl() 
         {
             return new NextReservationsControl();
+        }
+    }
+
+    internal class SearchReservationsTabBuilder : TabPageBuilder
+    {
+        public SearchReservationsTabBuilder()
+        {
+            neededPermissions = new string[] { "BUSQUEDA" };
+            tabName = "Buscar reservas";
+        }
+
+        protected override UserControl BuildControl()
+        {
+            return new SearchReservationsControl();
         }
     }
 }

@@ -17,3 +17,4 @@ D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Si
 D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\GUI\obj\Debug\GUI.Login.resources
 D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\GUI\obj\Debug\GUI.MainMenu.resources
 D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\GUI\obj\Debug\GUI.NextReservationsControl.resources
+D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\GUI\obj\Debug\GUI.SearchReservationsControl.resources
