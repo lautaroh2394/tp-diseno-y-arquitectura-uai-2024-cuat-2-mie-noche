@@ -5,7 +5,5 @@ D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Si
 D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\DAL\obj\Debug\DAL.dll
 D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\DAL\obj\Debug\DAL.pdb
 D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\DAL\bin\Debug\BE.dll
-D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\DAL\bin\Debug\BLL.dll
 D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\DAL\bin\Debug\BE.pdb
-D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\DAL\bin\Debug\BLL.pdb
 D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos\DAL\obj\Debug\DAL.csproj.Up2Date

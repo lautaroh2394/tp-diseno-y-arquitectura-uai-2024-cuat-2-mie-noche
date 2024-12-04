@@ -14,30 +14,15 @@ namespace GUI
 {
     public partial class SearchReservationsControl : UserControl
     {
-        private CategoriesRepository categoriesRepository;
-        private ReservationsRepository reservationsRepository;
+        private BLL.Categories categories;
+        private BLL.Reservations reservations;
 
         public SearchReservationsControl()
         {
             InitializeComponent();
-            categoriesRepository = new DAL.CategoriesRepository();
-            reservationsRepository = new DAL.ReservationsRepository();
-            SetComboBoxOptions();
+            categories = new BLL.Categories();
+            reservations = new BLL.Reservations();
             SetSearchDates();
-        }
-
-        private void SetComboBoxOptions()
-        {
-            DataSet categoriesDs = categoriesRepository.GetCategoriesDataSource();
-            DataTable table = categoriesDs.Tables[0];
-            DataRow newRow = table.NewRow();
-            newRow["id"] = null;
-            newRow["show_name"] = "-- Seleccione --";
-            table.Rows.InsertAt(newRow, 0);
-
-            reservationCategories.DataSource = table;
-            reservationCategories.DisplayMember = "show_name";
-            reservationCategories.ValueMember = "id";
         }
 
         private void SetSearchDates() 
@@ -56,9 +41,8 @@ namespace GUI
             DateTime startDate = startDatePicker.Value.Date;
             DateTime endDate = endDatePicker.Value.AddDays(1).Date;
             string client = clientNameText.Text.Length > 0 ? clientNameText.Text : null;
-            string categoryId = null;
-            if (reservationCategories.SelectedIndex > 0) categoryId = (string) reservationCategories.SelectedValue;
-            DataSet foundReservations = reservationsRepository.SearchReservations(
+            string categoryId = categoriesSelector1.GetSelectedCategoryId();
+            DataSet foundReservations = reservations.SearchReservations(
                 startDate,
                 endDate,
                 categoryId,

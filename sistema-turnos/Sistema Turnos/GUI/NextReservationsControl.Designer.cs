@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.reservationCategories = new System.Windows.Forms.ComboBox();
             this.TurnCategory = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
+            this.categoriesSelector1 = new GUI.CategoriesSelector();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,16 +42,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(684, 221);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // reservationCategories
-            // 
-            this.reservationCategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.reservationCategories.FormattingEnabled = true;
-            this.reservationCategories.Location = new System.Drawing.Point(152, 31);
-            this.reservationCategories.Name = "reservationCategories";
-            this.reservationCategories.Size = new System.Drawing.Size(135, 21);
-            this.reservationCategories.TabIndex = 8;
-            this.reservationCategories.SelectedIndexChanged += new System.EventHandler(this.reservationCategories_SelectedIndexChanged);
             // 
             // TurnCategory
             // 
@@ -73,13 +63,20 @@
             this.labelTotal.Text = "asdfasdf";
             this.labelTotal.Visible = false;
             // 
+            // categoriesSelector1
+            // 
+            this.categoriesSelector1.Location = new System.Drawing.Point(152, 31);
+            this.categoriesSelector1.Name = "categoriesSelector1";
+            this.categoriesSelector1.Size = new System.Drawing.Size(135, 21);
+            this.categoriesSelector1.TabIndex = 11;
+            // 
             // NextReservationsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.categoriesSelector1);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.TurnCategory);
-            this.Controls.Add(this.reservationCategories);
             this.Controls.Add(this.dataGridView1);
             this.Name = "NextReservationsControl";
             this.Size = new System.Drawing.Size(690, 311);
@@ -91,8 +88,8 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox reservationCategories;
         private System.Windows.Forms.Label TurnCategory;
         private System.Windows.Forms.Label labelTotal;
+        private CategoriesSelector categoriesSelector1;
     }
 }

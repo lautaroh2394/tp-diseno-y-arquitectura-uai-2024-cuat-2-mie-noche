@@ -14,47 +14,30 @@ namespace GUI
 {
     public partial class NextReservationsControl : UserControl
     {
-        private CategoriesRepository categoriesRepository;
-        private ReservationsRepository reservationsRepository;
+        private BLL.Categories categories;
+        private BLL.Reservations reservations;
         public NextReservationsControl()
         {
             InitializeComponent();
-            categoriesRepository = new DAL.CategoriesRepository();
-            reservationsRepository = new DAL.ReservationsRepository();
-            SetComboBoxOptions();
+            categories = new BLL.Categories();
+            reservations = new BLL.Reservations();
+            categoriesSelector1.CategoryChange += categoriesSelector1_CategoryChange;
         }
 
-        private void SetComboBoxOptions()
+        private void categoriesSelector1_CategoryChange(object sender, EventArgs e)
         {
-            DataSet categoriesDs = categoriesRepository.GetCategoriesDataSource();
-            DataTable table = categoriesDs.Tables[0];
-            DataRow newRow= table.NewRow();
-            newRow["id"] = null;
-            newRow["show_name"] = "-- Seleccione --";
-            table.Rows.InsertAt(newRow, 0);
+            string categoryId = (string)categoriesSelector1.GetSelectedCategoryId();
+            DataTable table = reservations.GetTodayReservationsDataSet(categoryId).Tables[0];
+            dataGridView1.DataSource = table;
+            table.Columns["duration"].ColumnName = "Duración";
+            table.Columns["start_date"].ColumnName = "Fecha de inicio";
+            table.Columns["end_date"].ColumnName = "Fecha de fin";
+            table.Columns["client_name"].ColumnName = "Cliente";
+            dataGridView1.Columns["id"].Visible = false;
+            dataGridView1.Columns["created_by"].Visible = false;
 
-            reservationCategories.DataSource = table;
-            reservationCategories.DisplayMember = "show_name";
-            reservationCategories.ValueMember = "id";
-        }
-
-        private void reservationCategories_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (reservationCategories.SelectedIndex != 0)
-            {
-                string categoryId = (string) reservationCategories.SelectedValue;
-                DataTable table = reservationsRepository.GetTodayReservationsDataSet(categoryId).Tables[0];
-                dataGridView1.DataSource = table;
-                table.Columns["duration"].ColumnName = "Duración";
-                table.Columns["start_date"].ColumnName = "Fecha de inicio";
-                table.Columns["end_date"].ColumnName = "Fecha de fin";
-                table.Columns["client_name"].ColumnName = "Cliente";
-                dataGridView1.Columns["id"].Visible = false;
-                dataGridView1.Columns["created_by"].Visible = false;
-
-                labelTotal.Visible = true;
-                labelTotal.Text = $"Total: {table.Rows.Count}";
-            } else labelTotal.Visible = false;
+            labelTotal.Visible = true;
+            labelTotal.Text = $"Total: {table.Rows.Count}";
         }
     }
 }

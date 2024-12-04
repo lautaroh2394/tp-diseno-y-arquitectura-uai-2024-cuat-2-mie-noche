@@ -1,4 +1,5 @@
 ﻿using BE;
+using DAL;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +9,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL
+namespace BLL
 {
     public class UserCommands
     {
@@ -18,15 +19,20 @@ namespace DAL
         public static string GET_ALL_USERS_FROM_VIEW = "SELECT * from users_view";
     }
 
-    public class UsersRepository : SqlInteractor
+    public class Users
     {
+        DBConnectionManager connectionManager;
+        public Users() 
+        {
+            this.connectionManager = new DBConnectionManager();
+        }
         public BE.User GetUser(int id)
         {
             BE.User User = null;
 
             object[][] parametersData = new object[][] { new object[] { "id", id } };
-            SqlParameter[] parameters = BuildParameters(parametersData);    
-            SqlCommand GetUsersCommand = CreateSqlCommand(UserCommands.GET_USER_BY_ID, parameters);
+            SqlParameter[] parameters = this.connectionManager.BuildParameters(parametersData);    
+            SqlCommand GetUsersCommand = this.connectionManager.CreateSqlCommand(UserCommands.GET_USER_BY_ID, parameters);
 
             using (SqlConnection Connection = DBConnectionManager.CreateSqlConnection())
             {
@@ -53,8 +59,8 @@ namespace DAL
         {
             BE.User User = null;
             object[][] parametersData = new object[][] { new object[] { "username", username} };
-            SqlParameter[] parameters = BuildParameters(parametersData);
-            SqlCommand GetUsersCommand = CreateSqlCommand(UserCommands.GET_USER_PERMISSIONS_BY_USERNAME, parameters);
+            SqlParameter[] parameters = this.connectionManager.BuildParameters(parametersData);
+            SqlCommand GetUsersCommand = this.connectionManager.CreateSqlCommand(UserCommands.GET_USER_PERMISSIONS_BY_USERNAME, parameters);
 
             using (SqlConnection Connection = DBConnectionManager.CreateSqlConnection())
             {
@@ -81,7 +87,7 @@ namespace DAL
         public List<BE.User> GetAllUsers()
         {
             List<BE.User> Users = new List<BE.User>();
-            SqlCommand GetUsersCommand = CreateSqlCommand(UserCommands.GET_ALL_USERS_FROM_VIEW);
+            SqlCommand GetUsersCommand = this.connectionManager.CreateSqlCommand(UserCommands.GET_ALL_USERS_FROM_VIEW);
 
             using (SqlConnection Connection = DBConnectionManager.CreateSqlConnection())
             {
@@ -121,7 +127,7 @@ namespace DAL
             List<BE.User> Users = new List<BE.User>();
             SqlParameter[] parameters = new SqlParameter[1];
             parameters[0] = new SqlParameter("@userId", id);
-            SqlCommand GetUserPermissionsCommand = CreateStoredProcedureCommand(UserCommands.GET_USER_PERMISSIONS, parameters);
+            SqlCommand GetUserPermissionsCommand = this.connectionManager.CreateStoredProcedureCommand(UserCommands.GET_USER_PERMISSIONS, parameters);
 
             List<BE.UserPermission> permissions = new List<BE.UserPermission>();
             using (SqlConnection Connection = DBConnectionManager.CreateSqlConnection())

@@ -37,7 +37,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.startDatePicker = new System.Windows.Forms.DateTimePicker();
             this.endDatePicker = new System.Windows.Forms.DateTimePicker();
-            this.reservationCategories = new System.Windows.Forms.ComboBox();
+            this.categoriesSelector1 = new GUI.CategoriesSelector();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,20 +122,18 @@
             this.endDatePicker.TabIndex = 11;
             this.endDatePicker.Value = new System.DateTime(2024, 11, 26, 21, 19, 20, 0);
             // 
-            // reservationCategories
+            // categoriesSelector1
             // 
-            this.reservationCategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.reservationCategories.FormattingEnabled = true;
-            this.reservationCategories.Location = new System.Drawing.Point(138, 76);
-            this.reservationCategories.Name = "reservationCategories";
-            this.reservationCategories.Size = new System.Drawing.Size(135, 21);
-            this.reservationCategories.TabIndex = 12;
+            this.categoriesSelector1.Location = new System.Drawing.Point(138, 76);
+            this.categoriesSelector1.Name = "categoriesSelector1";
+            this.categoriesSelector1.Size = new System.Drawing.Size(135, 21);
+            this.categoriesSelector1.TabIndex = 13;
             // 
             // SearchReservationsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.reservationCategories);
+            this.Controls.Add(this.categoriesSelector1);
             this.Controls.Add(this.endDatePicker);
             this.Controls.Add(this.startDatePicker);
             this.Controls.Add(this.dataGridView1);
@@ -163,6 +161,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker startDatePicker;
         private System.Windows.Forms.DateTimePicker endDatePicker;
-        private System.Windows.Forms.ComboBox reservationCategories;
+        private CategoriesSelector categoriesSelector1;
     }
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using System.Security.Cryptography;
-namespace DAL
+using DAL;
+namespace BLL
 {
     public class ReservationCommands
     {
@@ -14,13 +15,22 @@ namespace DAL
         static public string GET_TODAY_RESERVATIONS = "get_today_reservations";
         static public string GET_RESERVATIONS = "get_reservations";
     }
-    public class ReservationsRepository : SqlInteractor
+    public class Reservations
     {
-        public DataSet GetTodayReservationsDataSet(string categoryId)
+        private DBConnectionManager connectionManager;
+        public Reservations() 
         {
-            SqlParameter[] parameters = BuildParameters(new object[][] { new object[] { "category_id", categoryId } });
-            // TODO: Mejorar las columnas que se devuelven
-            DataSet dataSet = GetProcedureDataSource(ReservationCommands.GET_TODAY_RESERVATIONS, parameters);
+            this.connectionManager = new DBConnectionManager();
+        }
+
+        public DataSet GetTodayReservationsDataSet(string categoryId = null)
+        {
+            SqlParameter[] parameters = new SqlParameter[0];
+            if (categoryId != null) {
+                connectionManager.BuildParameters(new object[][] { new object[] { "category_id", categoryId } });
+            }
+
+            DataSet dataSet = connectionManager.GetProcedureDataSource(ReservationCommands.GET_TODAY_RESERVATIONS, parameters);
             return dataSet;
         }
 
@@ -51,7 +61,7 @@ namespace DAL
                 parameters.Add(categoryParam);
             }
 
-            DataSet dataSet = GetProcedureDataSource(ReservationCommands.GET_RESERVATIONS, parameters.ToArray());
+            DataSet dataSet = connectionManager.GetProcedureDataSource(ReservationCommands.GET_RESERVATIONS, parameters.ToArray());
             return dataSet;
         }
     }

@@ -4,19 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using DAL;
 
-namespace DAL
+namespace BLL
 {
     public class CategoryCommands
     {
         public static string GET_CATEGORIES = "select id, show_name from categories";
     }
 
-    public class CategoriesRepository : SqlInteractor
+    public class Categories
     {
+        DBConnectionManager connectionManager;
+
+        public Categories()
+        {
+            connectionManager = new DBConnectionManager();
+        }
+
         public DataSet GetCategoriesDataSource()
         {
-            DataSet dataSet = GetCommandDataSource(CategoryCommands.GET_CATEGORIES);
+            DataSet dataSet = connectionManager.GetCommandDataSource(CategoryCommands.GET_CATEGORIES);
             return dataSet;
         }
     }

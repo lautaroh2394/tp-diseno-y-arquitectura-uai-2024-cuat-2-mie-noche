@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL
+namespace BLL
 {
     public class ConfigKeys
     {
@@ -29,6 +29,12 @@ namespace DAL
         public static string GetConfigValue(string configKey)
         {
             return ConfigManager.GetInstance().InstanceGetConfigValue(configKey);
+        }
+
+        public static void SetConnectionStringFromConfigurationFile() 
+        {
+            string value = BLL.ConfigManager.GetConfigValue(BLL.ConfigKeys.CONNECTION_STRING);
+            DAL.DBConnectionManager.SetConnectionString(value);
         }
 
         public ConfigManager() 

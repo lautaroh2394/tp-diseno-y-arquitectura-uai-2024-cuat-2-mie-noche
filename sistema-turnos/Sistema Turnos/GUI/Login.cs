@@ -20,9 +20,9 @@ namespace GUI
 
         private void buttonLogIn_Click(object sender, EventArgs e)
         {
-            if (DAL.Authenticator.Authenticate(inputUser.Text, inputPassword.Text))
+            if (BLL.Authenticator.Authenticate(inputUser.Text, inputPassword.Text))
             {
-                DAL.SessionManager.SetCurrentUserByUsername(inputUser.Text);
+                BLL.SessionManager.SetCurrentUserByUsername(inputUser.Text);
                 this.Close();
             }
             else

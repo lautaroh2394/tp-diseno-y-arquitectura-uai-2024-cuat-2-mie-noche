@@ -41,13 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Authenticator.cs" />
-    <Compile Include="CategoriesRepository.cs" />
-    <Compile Include="SessionManager.cs" />
-    <Compile Include="SqlInteractor.cs" />
-    <Compile Include="UsersRepository.cs" />
-    <Compile Include="ReservationsRepository.cs" />
-    <Compile Include="ConfigManager.cs" />
     <Compile Include="DBConnectionManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,10 +48,6 @@
     <ProjectReference Include="..\BE\BE.csproj">
       <Project>{b030cf0b-2f9a-4618-aa75-3be6ced8de29}</Project>
       <Name>BE</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{e4bdbaf7-b5e2-4bbf-9b74-1efb2e4b2c57}</Project>
-      <Name>BLL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

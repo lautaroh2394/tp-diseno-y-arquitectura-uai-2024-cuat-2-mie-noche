@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL
+namespace BLL
 {
     public class SessionManager
     {
         private BE.User currentUser = null;
-        private DAL.UsersRepository usersRepository;
+        private BLL.Users users;
         static private SessionManager instance;
 
         public static SessionManager GetInstance()
@@ -30,12 +30,12 @@ namespace DAL
 
         public SessionManager()
         {
-            usersRepository = new UsersRepository();
+            users = new Users();
         }
 
         public void InstanceSetCurrentUser(string username)
         {
-            currentUser = usersRepository.GetUserByUserName(username);
+            currentUser = users.GetUserByUserName(username);
         }
 
         public BE.User InstanceGetCurrentUser()
