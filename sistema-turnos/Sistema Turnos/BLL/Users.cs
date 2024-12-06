@@ -112,12 +112,19 @@ namespace BLL
             return Users;
         }
 
+        public DataSet GetAllUsersDataSource()
+        {
+            List<BE.User> Users = new List<BE.User>();
+            DataSet ds = this.connectionManager.GetCommandDataSource(UserCommands.GET_ALL_USERS_FROM_VIEW);
+            return ds;
+        }
+
         public void CreateUser()
         {
             // proc
         }
 
-        public void UpdateUser()
+        public void UpdateUser(User user)
         {
             // proc
         }

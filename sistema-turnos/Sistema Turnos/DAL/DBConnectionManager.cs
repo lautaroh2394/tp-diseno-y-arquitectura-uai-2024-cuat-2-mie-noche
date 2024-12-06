@@ -84,9 +84,18 @@ namespace DAL
 
         public DataSet GetDataSource(SqlCommand command)
         {
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            DataSet dataSet = new DataSet();
-            adapter.Fill(dataSet);
+            DataSet dataSet = null;
+            try
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                dataSet = new DataSet();
+                adapter.Fill(dataSet);
+            }
+            catch (Exception ex) {
+                Console.WriteLine("GetDataSource error", ex.ToString());
+                dataSet = null;
+            }
+            
             return dataSet;
         }
 

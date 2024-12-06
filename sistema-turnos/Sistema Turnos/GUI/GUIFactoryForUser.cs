@@ -11,9 +11,11 @@ namespace GUI
 {
     public class GUICreatorForUser
     {
-        private object[][] tabBuilders = {
-            new object[] { "BUSQUEDA", typeof(NextReservationsTabBuilder) },
-            new object[] { "BUSQUEDA", typeof(SearchReservationsTabBuilder) }
+        private object[] tabBuilders = {
+            typeof(NextReservationsTabBuilder),
+            typeof(SearchReservationsTabBuilder),
+            typeof(MakeReservationsTabBuilder),
+            typeof(AdminTabBuilder)
             /*
             "RESERVA",
             "CREAR_USUARIO",
@@ -37,10 +39,10 @@ namespace GUI
         {
             List<TabPage> tabPages = new List<TabPage>();
 
-            foreach (object[] tabBuilder in tabBuilders)
+            foreach (object tabBuilder in tabBuilders)
             {
-                Type BuilderClass = (Type) tabBuilder[1];
-                TabPageBuilder builder = (TabPageBuilder) Activator.CreateInstance(BuilderClass);
+                Type BuilderClass = (Type)tabBuilder;
+                TabPageBuilder builder = (TabPageBuilder)Activator.CreateInstance(BuilderClass);
                 if (builder.ShouldBuild(user))
                 {
                     TabPage control = builder.build(user);
@@ -67,9 +69,7 @@ namespace GUI
 
         public bool ShouldBuild(BE.User user)
         {
-            return neededPermissions.All(p => user.permissions.Any(
-                (BE.UserPermission up) => up.name.Equals(p))
-            );
+            return neededPermissions.All(p => user.HasPermissionById(p));
         }
     }
 
@@ -81,7 +81,7 @@ namespace GUI
             tabName = "Turnos del día";
         }
 
-        protected override UserControl BuildControl() 
+        protected override UserControl BuildControl()
         {
             return new NextReservationsControl();
         }
@@ -98,6 +98,34 @@ namespace GUI
         protected override UserControl BuildControl()
         {
             return new SearchReservationsControl();
+        }
+    }
+
+    internal class MakeReservationsTabBuilder : TabPageBuilder
+    {
+        public MakeReservationsTabBuilder()
+        {
+            neededPermissions = new string[] { "RESERVA" };
+            tabName = "Crear reservas";
+        }
+
+        protected override UserControl BuildControl()
+        {
+            return new MakeReservationsControl();
+        }
+    }
+
+    internal class AdminTabBuilder : TabPageBuilder
+    {
+        public AdminTabBuilder()
+        {
+            neededPermissions = new string[] { "ADMIN" };
+            tabName = "Admin";
+        }
+
+        protected override UserControl BuildControl()
+        {
+            return new AdminControl();
         }
     }
 }

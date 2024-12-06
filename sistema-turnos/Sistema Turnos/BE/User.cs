@@ -18,6 +18,11 @@ namespace BE
             this.username = username;
             this.permissions = permissions;
         }
+
+        public bool HasPermissionById(string permission) 
+        {
+            return this.permissions.Any(p => p.id.Equals(permission));
+        }
     }
 
     public class UserPermission

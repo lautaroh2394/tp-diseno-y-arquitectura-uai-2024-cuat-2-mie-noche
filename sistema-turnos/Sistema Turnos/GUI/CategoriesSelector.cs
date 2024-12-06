@@ -19,7 +19,6 @@ namespace GUI
         {
             InitializeComponent();
             SetCategoriesOptions();
-            comboBox1.SelectedIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
 
         }
@@ -27,6 +26,8 @@ namespace GUI
         private void SetCategoriesOptions() 
         {
             DataSet categoriesDs = new Categories().GetCategoriesDataSource();
+            if (categoriesDs == null) return;
+
             DataTable table = categoriesDs.Tables[0];
             DataRow newRow = table.NewRow();
             newRow["id"] = null;
@@ -36,6 +37,8 @@ namespace GUI
             comboBox1.DataSource = table;
             comboBox1.DisplayMember = "show_name";
             comboBox1.ValueMember = "id";
+
+            comboBox1.SelectedIndex = 0;
         }
 
         public string GetSelectedCategoryId()
@@ -48,7 +51,18 @@ namespace GUI
         {
             return comboBox1.SelectedIndex;
         }
-        
+
+        public void Disable()
+        {
+            comboBox1.Enabled = false;
+        }
+
+        public void SetSelectedCategoryId(string categoryId)
+        {
+            comboBox1.SelectedValue = categoryId;
+        }
+
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             CategoryChange?.Invoke(this, EventArgs.Empty);

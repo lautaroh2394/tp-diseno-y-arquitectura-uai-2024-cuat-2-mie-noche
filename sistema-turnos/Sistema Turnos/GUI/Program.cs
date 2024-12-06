@@ -24,7 +24,7 @@ namespace GUI
             BLL.ConfigManager.SetConnectionStringFromConfigurationFile();
             Login formLogin = new Login();
             bool debug = true;
-            if (debug) BLL.SessionManager.SetCurrentUserByUsername("admin");
+            if (debug) BLL.SessionManager.SetCurrentUserByUsername("fulladmin");
             else formLogin.ShowDialog();
 
             if (BLL.SessionManager.GetCurrentUser() == null) 
@@ -49,7 +49,7 @@ namespace GUI
             List<BE.UserPermission> userPermissions = new BLL.Users().GetUserPermissions(87);
             Console.WriteLine($"userPermissions : {userPermissions.Count}, {String.Join(", ", userPermissions.Select(p => p.id))}");
 
-            int sqlScriptReexecutions = 2;
+            int sqlScriptReexecutions = 3;
             BE.User user = new BLL.Users().GetUser(127 + (sqlScriptReexecutions * 6));
             Console.WriteLine("username:");
             Console.WriteLine(user.username);
@@ -60,8 +60,6 @@ namespace GUI
             Console.WriteLine($"isValid: {isValid}");
             isValid = BLL.Authenticator.Authenticate("buscador", "no deberia autorizar");
             Console.WriteLine($"isValid: {isValid}");
-
-
         }            
     }
 }
