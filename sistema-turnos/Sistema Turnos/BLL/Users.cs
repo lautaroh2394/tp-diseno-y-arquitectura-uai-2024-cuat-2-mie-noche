@@ -119,7 +119,7 @@ namespace BLL
             return ds;
         }
 
-        public void CreateUser()
+        public void CreateUser(User user)
         {
             // proc
         }

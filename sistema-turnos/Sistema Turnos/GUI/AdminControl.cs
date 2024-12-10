@@ -18,7 +18,7 @@ namespace GUI
         public AdminControl()
         {
             InitializeComponent();
-            this.dataGridView1.CellContentClick += this.dataGridView1_CellContentClick;
+            this.dataGridView1.CellDoubleClick += this.dataGridView1_CellContentClick;
             users = new Users();
         }
 

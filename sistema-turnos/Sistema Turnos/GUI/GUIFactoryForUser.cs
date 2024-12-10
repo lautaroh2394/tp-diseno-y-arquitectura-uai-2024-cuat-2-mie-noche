@@ -15,14 +15,8 @@ namespace GUI
             typeof(NextReservationsTabBuilder),
             typeof(SearchReservationsTabBuilder),
             typeof(MakeReservationsTabBuilder),
-            typeof(AdminTabBuilder)
-            /*
-            "RESERVA",
-            "CREAR_USUARIO",
-            "EDITAR_USUARIO",
-            "VER_USUARIOS",
-            "ADMIN"
-            */
+            typeof(AdminTabBuilder),
+            typeof(ProfileTabBuilder),
         };
 
         public TabControl CreateForUser(BE.User user)
@@ -69,7 +63,7 @@ namespace GUI
 
         public bool ShouldBuild(BE.User user)
         {
-            return neededPermissions.All(p => user.HasPermissionById(p));
+            return neededPermissions.Count() == 0 || neededPermissions.All(p => user.HasPermissionById(p));
         }
     }
 
@@ -126,6 +120,20 @@ namespace GUI
         protected override UserControl BuildControl()
         {
             return new AdminControl();
+        }
+    }
+
+    internal class ProfileTabBuilder : TabPageBuilder
+    {
+        public ProfileTabBuilder()
+        {
+            neededPermissions = new string[0];
+            tabName = "Mi perfil";
+        }
+
+        protected override UserControl BuildControl()
+        {
+            return new ProfileControl();
         }
     }
 }

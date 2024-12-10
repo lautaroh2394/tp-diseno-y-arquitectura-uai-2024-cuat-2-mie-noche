@@ -10,13 +10,15 @@ namespace BE
     {
         public long id;
         public string username;
+        public string password;
         public List<UserPermission> permissions;
 
-        public User(long id, string username, List<UserPermission> permissions)
+        public User(long id, string username, List<UserPermission> permissions, string password = null)
         {
             this.id = id;
             this.username = username;
             this.permissions = permissions;
+            this.password = password;
         }
 
         public bool HasPermissionById(string permission) 

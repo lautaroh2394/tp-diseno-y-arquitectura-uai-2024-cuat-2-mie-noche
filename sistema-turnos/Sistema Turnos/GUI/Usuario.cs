@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,53 +20,26 @@ namespace GUI
     {
         private BE.User usuario;
         private object[][] permissionBoxes;
+
         public Usuario(UsuarioMode mode, BE.User usuario = null)
         {
             InitializeComponent();
-            this.usuario = usuario;
-            this.permissionBoxes = new object[][]{
-                new object[] {"BUSQUEDA", this.checkBoxBusqueda },
-                new object[] {"RESERVA", this.checkBoxReserva },
-                new object[] {"CREAR_USUARIO", this.checkBoxCrearUsuario },
-                new object[] {"EDITAR_USUARIO", this.checkBoxEditarUsuario },
-                new object[] {"VER_USUARIO", this.checkBoxVerUsuario }
-            };
-            if (mode == UsuarioMode.Read) Disable();
-            SetValues();
+            InitializeUsuarioControl(mode, usuario);
+            usuarioControl1.CloseEvent += this.CloseEvent;
         }
 
-        private void Disable()
+        private void InitializeUsuarioControl(UsuarioMode mode, BE.User usuario = null)
         {
-            textBox1.Enabled = false;
-            textBox2.Enabled = false;
-
-            foreach (var item in this.permissionBoxes)
-            {
-                CheckBox checkbox = (CheckBox) item[1];
-                checkbox.Enabled = false;
-            }
-
-            button1.Hide();
+            this.usuarioControl1 = new GUI.UsuarioControl(mode, usuario);
+            this.usuarioControl1.Location = new System.Drawing.Point(48, 4);
+            this.usuarioControl1.Name = "usuarioControl1";
+            this.usuarioControl1.Size = new System.Drawing.Size(205, 339);
+            this.usuarioControl1.TabIndex = 10;
+            this.Controls.Add(this.usuarioControl1);
         }
 
-        private void SetValues()
+        private void CloseEvent(object sender, EventArgs e)
         {
-            if (this.usuario == null) return;
-
-            textBox1.Text = usuario.username;
-
-            foreach (var item in permissionBoxes)
-            {
-                string permission = (string) item[0];
-                CheckBox checkbox = (CheckBox) item[1];
-                if (usuario.HasPermissionById(permission)) { checkbox.Checked = true; };
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new BLL.Users().UpdateUser(usuario);
-            MessageBox.Show("Usuario actualizado");
             this.Close();
         }
     }

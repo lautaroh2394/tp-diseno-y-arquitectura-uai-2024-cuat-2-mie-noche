@@ -61,7 +61,7 @@ namespace BLL
             return isValid;
         }
 
-        private string HashPassword(string password)
+        public string HashPassword(string password)
         {
             string hashedPassword;
             using (SHA256 sha256Hash = SHA256.Create())
