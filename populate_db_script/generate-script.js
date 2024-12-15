@@ -72,6 +72,7 @@ const generatePermissions = async () => {
         ["CREAR_USUARIO", "Crear usuario"],
         ["EDITAR_USUARIO", "Editar usuario"],
         ["VER_USUARIOS", "Ver usuarios"],
+        ["ADMIN", "Administrador"],
     ]
 
     permissions.map(([name, show_name]) => insertPermission(name, show_name))
@@ -97,7 +98,9 @@ const generateUsers = async () => {
         ["editor", ["EDITAR_USUARIO"]],
         ["visor", ["VER_USUARIOS"]],
         ["recepcionista", ["BUSQUEDA", "RESERVA"]],
-        ["admin", ["BUSQUEDA", "RESERVA", "CREAR_USUARIO", "EDITAR_USUARIO", "VER_USUARIOS"]],
+        ["full", ["BUSQUEDA", "RESERVA", "CREAR_USUARIO", "EDITAR_USUARIO", "VER_USUARIOS"]],
+        ["fulladmin", ["BUSQUEDA", "RESERVA", "CREAR_USUARIO", "EDITAR_USUARIO", "VER_USUARIOS", "ADMIN"]],
+        ["admin", ["ADMIN"]],
     ]
     addToScript('DECLARE @permissions PermissionsListType;')
     users.map(([name, permissions]) => createUser(name, permissions))
@@ -154,7 +157,7 @@ const generateReservations = () => {
                         id,
                         getRandomClient()
                     )
-                    total++
+                total++
                 h++
             }
         }

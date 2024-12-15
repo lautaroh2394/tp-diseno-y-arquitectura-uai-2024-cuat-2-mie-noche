@@ -1,4 +1,5 @@
-﻿using DAL;
+﻿using BLL;
+using DAL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,8 @@ namespace GUI
             categories = new BLL.Categories();
             reservations = new BLL.Reservations();
             SetSearchDates();
+            this.dataGridViewWithExport1.SetName("SearchReservations");
+            this.dataGridViewWithExport1.SetDoubleClickEvent(this.dataGridViewWithExport1_CellDoubleClick);
         }
 
         private void SetSearchDates() 
@@ -50,7 +53,25 @@ namespace GUI
                 );
             DataTable table = foundReservations.Tables[0];
             
-            dataGridView1.DataSource = table;
+            dataGridViewWithExport1.SetSource(table);
+        }
+
+        private void dataGridViewWithExport1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                DataTable table = (DataTable)dataGridViewWithExport1.GetDataGridView().DataSource;
+                int indexId = table.Columns.IndexOf("id");
+                int id = Int32.Parse(dataGridViewWithExport1.GetDataGridView().Rows[e.RowIndex].Cells[indexId].Value.ToString());
+
+                ReservationMode mode = SessionManager.GetCurrentUser().CanEditReservations() ? ReservationMode.Edit : ReservationMode.Read;
+                BE.Reservation reservation = reservations.GetReservationById(id);
+                new Reservation(mode, reservation).ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception on cell double click", ex.ToString());
+            }
         }
     }
 }

@@ -1,1 +1,2 @@
 CONNECTION_STRING==Server=WINDOWS-J8OE48L\\SQLEXPRESS;Database=sistema_turnos;Trusted_Connection=True;
+EXPORT_PATH==D:\Users\Lau\Documents\Facu\UAI\Diseño y arquitectura\TP 2024\sistema-turnos\Sistema Turnos

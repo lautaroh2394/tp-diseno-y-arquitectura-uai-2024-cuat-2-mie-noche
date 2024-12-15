@@ -20,11 +20,15 @@ namespace GUI
             InitializeComponent();
             this.dataGridView1.CellDoubleClick += this.dataGridView1_CellContentClick;
             users = new Users();
+            if (!SessionManager.GetCurrentUser().CanSeeUsers()) {
+                this.button2.Hide();
+                this.dataGridView1.Hide();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Usuario(UsuarioMode.Write, null).Show();
+            new Usuario(UsuarioMode.Write, null).ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -38,7 +42,8 @@ namespace GUI
         {
             int id = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
             BE.User user = users.GetUser(id);
-            new Usuario(UsuarioMode.Read, user).Show();
+            UsuarioMode mode = SessionManager.GetCurrentUser().CanEditUsers() ? UsuarioMode.Write : UsuarioMode.Read;
+            new Usuario(mode, user).ShowDialog();
         }
     }
 }

@@ -17,6 +17,8 @@ namespace BLL
         public static string GET_USER_BY_ID = "SELECT TOP 1 * from users_view where id = @id";
         public static string GET_USER_PERMISSIONS_BY_USERNAME = "SELECT TOP 1 * from users_view where username = @username";
         public static string GET_ALL_USERS_FROM_VIEW = "SELECT * from users_view";
+        public static string CREATE_USER = "create_user";
+        public static string UPDATE_USER = "update_user";
     }
 
     public class Users
@@ -74,6 +76,7 @@ namespace BLL
                     {
                         User = MapUser(Reader);
                     }
+                    Reader.Close();
                 }
                 catch (Exception ex)
                 {
@@ -119,14 +122,56 @@ namespace BLL
             return ds;
         }
 
-        public void CreateUser(User user)
+        public int CreateUser(User user)
         {
-            // proc
+            List<SqlParameter> p = new List<SqlParameter>();
+            string[] permissionsList = user.permissions.Select(up => up.id).ToArray();
+            
+            DataTable permisosTable = new DataTable();
+            permisosTable.Columns.Add("id", typeof(string));
+            user.permissions.ForEach(up => permisosTable.Rows.Add(up.id));
+            SqlParameter permissionsParam = new SqlParameter();
+            permissionsParam.Value = permisosTable;
+            permissionsParam.ParameterName = "permissions_list";
+            permissionsParam.SqlDbType = SqlDbType.Structured;
+            permissionsParam.TypeName = "PermissionsListType";
+
+            p.Add(permissionsParam);
+
+            if (user.password != null)
+            {
+                p.Add(new SqlParameter("hashed_password", user.password));
+            }
+            p.Add(new SqlParameter("username", user.username));
+            SqlCommand command = this.connectionManager.CreateStoredProcedureCommandWithConnection(UserCommands.CREATE_USER, p.ToArray());
+            command.Connection.Open();
+            int fa = command.ExecuteNonQuery();
+            command.Connection.Close();
+            return fa;
         }
 
-        public void UpdateUser(User user)
+        public int UpdateUser(User user)
         {
-            // proc
+            List<SqlParameter> p = new List<SqlParameter>();
+            string[] permissionsList = user.permissions.Select(up => up.id).ToArray();
+
+            DataTable permisosTable = new DataTable();
+            permisosTable.Columns.Add("id", typeof(string));
+            user.permissions.ForEach(up => permisosTable.Rows.Add(up.id));
+            SqlParameter permissionsParam = new SqlParameter();
+            permissionsParam.Value = permisosTable;
+            permissionsParam.ParameterName = "permissions_list";
+            permissionsParam.SqlDbType = SqlDbType.Structured;
+            permissionsParam.TypeName = "PermissionsListType";
+
+            p.Add(permissionsParam);
+            p.Add(new SqlParameter("new_hashed_password", user.password));
+            p.Add(new SqlParameter("user_id", user.id));
+            SqlCommand command = this.connectionManager.CreateStoredProcedureCommandWithConnection(UserCommands.UPDATE_USER, p.ToArray());
+            command.Connection.Open();
+            int fa = command.ExecuteNonQuery();
+            command.Connection.Close();
+            return fa;
         }
 
         public List<BE.UserPermission> GetUserPermissions(long id)

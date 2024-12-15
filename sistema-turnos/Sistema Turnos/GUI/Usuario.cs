@@ -18,8 +18,6 @@ namespace GUI
     }
     public partial class Usuario : Form
     {
-        private BE.User usuario;
-        private object[][] permissionBoxes;
 
         public Usuario(UsuarioMode mode, BE.User usuario = null)
         {

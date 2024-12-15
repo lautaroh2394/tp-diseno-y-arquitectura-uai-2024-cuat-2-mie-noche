@@ -34,11 +34,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.startDatePicker = new System.Windows.Forms.DateTimePicker();
             this.endDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.dataGridViewWithExport1 = new GUI.Controles.DataGridViewWithExport();
             this.categoriesSelector1 = new GUI.CategoriesSelector();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // clientNameText
@@ -94,14 +93,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 165);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(681, 221);
-            this.dataGridView1.TabIndex = 9;
-            // 
             // startDatePicker
             // 
             this.startDatePicker.Checked = false;
@@ -122,6 +113,13 @@
             this.endDatePicker.TabIndex = 11;
             this.endDatePicker.Value = new System.DateTime(2024, 11, 26, 21, 19, 20, 0);
             // 
+            // dataGridViewWithExport1
+            // 
+            this.dataGridViewWithExport1.Location = new System.Drawing.Point(6, 165);
+            this.dataGridViewWithExport1.Name = "dataGridViewWithExport1";
+            this.dataGridViewWithExport1.Size = new System.Drawing.Size(681, 281);
+            this.dataGridViewWithExport1.TabIndex = 14;
+            // 
             // categoriesSelector1
             // 
             this.categoriesSelector1.Location = new System.Drawing.Point(138, 76);
@@ -133,10 +131,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dataGridViewWithExport1);
             this.Controls.Add(this.categoriesSelector1);
             this.Controls.Add(this.endDatePicker);
             this.Controls.Add(this.startDatePicker);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -144,8 +142,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.clientNameText);
             this.Name = "SearchReservationsControl";
-            this.Size = new System.Drawing.Size(690, 399);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Size = new System.Drawing.Size(690, 454);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,9 +155,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker startDatePicker;
         private System.Windows.Forms.DateTimePicker endDatePicker;
         private CategoriesSelector categoriesSelector1;
+        private Controles.DataGridViewWithExport dataGridViewWithExport1;
     }
 }

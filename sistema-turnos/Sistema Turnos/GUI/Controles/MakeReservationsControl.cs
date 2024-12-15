@@ -57,9 +57,41 @@ namespace GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
+            /*
+            BE.Reservation reservation = 
+            int fa = reservations.Create(newReservation);
+            */
+            //new GUI.Reservation(ReservationMode.Read, newReservation).Show();
+        }
 
-            BE.Reservation newReservation = reservations.Create();
-            new GUI.Reservation(ReservationMode.Read, newReservation).Show();
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DateTime date = dateTimePicker3.Value.Date;
+            DateTime startDate = date.AddHours(startDatePicker.Value.Hour);
+            startDate = startDate.AddMinutes(startDatePicker.Value.Minute);
+
+            DateTime endDate = date.AddHours(endDatePicker.Value.Hour);
+            endDate = endDate.AddMinutes(endDatePicker.Value.Minute);
+
+            BE.Reservation newReservation = new BE.Reservation(0, startDate, endDate, categoriesSelector1.GetSelectedCategoryId(), clientNameText.Text,(int) SessionManager.GetCurrentUser().id);
+            bool isPossible = reservations.IsReservationPossible(newReservation);
+            if (!isPossible)
+            {
+                MessageBox.Show("No es posible reservar; se solapa el turno con otras reservas");
+                return;
+            }
+            try
+            {
+                int id = reservations.Create(newReservation);
+                MessageBox.Show("Reserva creada");
+                ReservationMode mode = SessionManager.GetCurrentUser().CanEditReservations() ? ReservationMode.Edit : ReservationMode.Read;
+                BE.Reservation reservation = reservations.GetReservationById(id);
+                new Reservation(mode, reservation).ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo reservar");
+            }
         }
     }
 }

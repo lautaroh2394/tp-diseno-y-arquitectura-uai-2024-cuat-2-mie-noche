@@ -1,0 +1,75 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <Duración>60</Duración>
+    <Fecha_x0020_de_x0020_inicio>2024-12-14T13:00:53-03:00</Fecha_x0020_de_x0020_inicio>
+    <Fecha_x0020_de_x0020_fin>2024-12-14T14:00:53-03:00</Fecha_x0020_de_x0020_fin>
+    <category_id>TURNO_GENERAL</category_id>
+    <Cliente>Esteban Sofía Sanchez                             </Cliente>
+    <id>1154</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <Duración>60</Duración>
+    <Fecha_x0020_de_x0020_inicio>2024-12-14T15:00:53-03:00</Fecha_x0020_de_x0020_inicio>
+    <Fecha_x0020_de_x0020_fin>2024-12-14T16:00:53-03:00</Fecha_x0020_de_x0020_fin>
+    <category_id>TURNO_GENERAL</category_id>
+    <Cliente>María Esteban Poncho Quiroga                      </Cliente>
+    <id>1155</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <Duración>60</Duración>
+    <Fecha_x0020_de_x0020_inicio>2024-12-14T13:00:53-03:00</Fecha_x0020_de_x0020_inicio>
+    <Fecha_x0020_de_x0020_fin>2024-12-14T14:00:53-03:00</Fecha_x0020_de_x0020_fin>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <Cliente>María Esteban Sofía Poncho                        </Cliente>
+    <id>1204</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <Duración>60</Duración>
+    <Fecha_x0020_de_x0020_inicio>2024-12-14T16:00:53-03:00</Fecha_x0020_de_x0020_inicio>
+    <Fecha_x0020_de_x0020_fin>2024-12-14T17:00:53-03:00</Fecha_x0020_de_x0020_fin>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <Cliente>Pepe Perez Poncho Soso                            </Cliente>
+    <id>1205</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <Duración>60</Duración>
+    <Fecha_x0020_de_x0020_inicio>2024-12-14T14:00:53-03:00</Fecha_x0020_de_x0020_inicio>
+    <Fecha_x0020_de_x0020_fin>2024-12-14T15:00:53-03:00</Fecha_x0020_de_x0020_fin>
+    <category_id>OPERACION</category_id>
+    <Cliente>Pepe María Héctor Perez                           </Cliente>
+    <id>1233</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <Duración>60</Duración>
+    <Fecha_x0020_de_x0020_inicio>2024-12-14T16:00:53-03:00</Fecha_x0020_de_x0020_inicio>
+    <Fecha_x0020_de_x0020_fin>2024-12-14T17:00:53-03:00</Fecha_x0020_de_x0020_fin>
+    <category_id>OPERACION</category_id>
+    <Cliente>Pepe Lucas Esteban García Perez Quiroga           </Cliente>
+    <id>1234</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <Duración>60</Duración>
+    <Fecha_x0020_de_x0020_inicio>2024-12-14T14:00:53-03:00</Fecha_x0020_de_x0020_inicio>
+    <Fecha_x0020_de_x0020_fin>2024-12-14T15:00:53-03:00</Fecha_x0020_de_x0020_fin>
+    <category_id>BAJA_CUENTA</category_id>
+    <Cliente>Román Sofía Poncho Marquez                        </Cliente>
+    <id>1255</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <Duración>60</Duración>
+    <Fecha_x0020_de_x0020_inicio>2024-12-14T10:10:00-03:00</Fecha_x0020_de_x0020_inicio>
+    <Fecha_x0020_de_x0020_fin>2024-12-14T11:10:00-03:00</Fecha_x0020_de_x0020_fin>
+    <category_id>BAJA_CUENTA</category_id>
+    <Cliente>sssss                                             </Cliente>
+    <id>1271</id>
+    <created_by>167</created_by>
+  </Table>
+</NewDataSet>

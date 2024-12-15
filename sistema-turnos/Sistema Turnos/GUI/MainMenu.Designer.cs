@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.SuspendLayout();
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 482);
             this.Name = "MainMenu";
             this.Text = "Sistema de turnos";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

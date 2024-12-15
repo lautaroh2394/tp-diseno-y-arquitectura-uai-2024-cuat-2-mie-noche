@@ -78,6 +78,7 @@ namespace DAL
             foreach (object[] parameter in parametersData)
             {
                 parameters[index] = new SqlParameter((string)parameter[0], parameter[1]);
+                index = index + 1;
             }
             return parameters;
         }

@@ -61,7 +61,7 @@ namespace GUI
             return newTabPage;
         }
 
-        public bool ShouldBuild(BE.User user)
+        public virtual bool ShouldBuild(BE.User user)
         {
             return neededPermissions.Count() == 0 || neededPermissions.All(p => user.HasPermissionById(p));
         }
@@ -113,13 +113,18 @@ namespace GUI
     {
         public AdminTabBuilder()
         {
-            neededPermissions = new string[] { "ADMIN" };
+            neededPermissions = new string[] { "ADMIN", "CREAR_USUARIO", "EDITAR_USUARIO", "VER_USUARIOS" };
             tabName = "Admin";
         }
 
         protected override UserControl BuildControl()
         {
             return new AdminControl();
+        }
+
+        override public bool ShouldBuild(BE.User user)
+        {
+            return neededPermissions.Count() == 0 || neededPermissions.Any(p => user.HasPermissionById(p));
         }
     }
 

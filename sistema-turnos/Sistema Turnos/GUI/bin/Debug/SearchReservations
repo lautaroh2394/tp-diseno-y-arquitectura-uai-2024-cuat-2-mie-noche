@@ -1,0 +1,1191 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T14:00:53-03:00</start_date>
+    <end_date>2024-12-11T15:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>María Quiroga Perez Soso                          </client_name>
+    <id>1142</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T15:00:53-03:00</start_date>
+    <end_date>2024-12-11T16:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Román Sofía Perez                                 </client_name>
+    <id>1143</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T16:00:53-03:00</start_date>
+    <end_date>2024-12-11T17:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Román Lucas Marquez Poncho Soso                   </client_name>
+    <id>1144</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T17:00:53-03:00</start_date>
+    <end_date>2024-12-11T18:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Sofía Román Sanchez Marquez                       </client_name>
+    <id>1145</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T18:00:53-03:00</start_date>
+    <end_date>2024-12-11T19:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Esteban Perez                                     </client_name>
+    <id>1146</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T17:00:53-03:00</start_date>
+    <end_date>2024-12-12T18:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Pepe Soso                                         </client_name>
+    <id>1147</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T19:00:53-03:00</start_date>
+    <end_date>2024-12-12T20:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Esteban Sofía Quiroga                             </client_name>
+    <id>1148</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T13:00:53-03:00</start_date>
+    <end_date>2024-12-13T14:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Román Sanchez García Quiroga                      </client_name>
+    <id>1149</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T15:00:53-03:00</start_date>
+    <end_date>2024-12-13T16:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Esteban Lucas Perez Poncho García                 </client_name>
+    <id>1150</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T16:00:53-03:00</start_date>
+    <end_date>2024-12-13T17:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Sofía Soso                                        </client_name>
+    <id>1151</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T17:00:53-03:00</start_date>
+    <end_date>2024-12-13T18:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Pepe Román Sanchez García                         </client_name>
+    <id>1152</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T18:00:53-03:00</start_date>
+    <end_date>2024-12-13T19:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Lucas María Román Perez                           </client_name>
+    <id>1153</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T13:00:53-03:00</start_date>
+    <end_date>2024-12-14T14:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Esteban Sofía Sanchez                             </client_name>
+    <id>1154</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T15:00:53-03:00</start_date>
+    <end_date>2024-12-14T16:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>María Esteban Poncho Quiroga                      </client_name>
+    <id>1155</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T17:00:53-03:00</start_date>
+    <end_date>2024-12-14T18:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Sofía Pepe Marquez Poncho                         </client_name>
+    <id>1156</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T15:00:53-03:00</start_date>
+    <end_date>2024-12-15T16:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Sofía Quiroga                                     </client_name>
+    <id>1157</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T16:00:53-03:00</start_date>
+    <end_date>2024-12-15T17:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Román Pepe Soso Marquez                           </client_name>
+    <id>1158</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T17:00:53-03:00</start_date>
+    <end_date>2024-12-15T18:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Sofía Marquez                                     </client_name>
+    <id>1159</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T18:00:53-03:00</start_date>
+    <end_date>2024-12-15T19:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Lucas Pepe Román Poncho Marquez                   </client_name>
+    <id>1160</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T13:00:53-03:00</start_date>
+    <end_date>2024-12-16T14:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Esteban Perez Marquez Soso                        </client_name>
+    <id>1161</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T16:00:53-03:00</start_date>
+    <end_date>2024-12-16T17:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Esteban Quiroga                                   </client_name>
+    <id>1162</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T19:00:53-03:00</start_date>
+    <end_date>2024-12-16T20:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Esteban Héctor García Perez Poncho                </client_name>
+    <id>1163</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T13:00:53-03:00</start_date>
+    <end_date>2024-12-17T14:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Sofía Marquez                                     </client_name>
+    <id>1164</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T15:00:53-03:00</start_date>
+    <end_date>2024-12-17T16:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Sofía Quiroga                                     </client_name>
+    <id>1165</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T16:00:53-03:00</start_date>
+    <end_date>2024-12-17T17:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Lucas Pepe Quiroga                                </client_name>
+    <id>1166</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T17:00:53-03:00</start_date>
+    <end_date>2024-12-17T18:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Héctor Lucas García Poncho Perez                  </client_name>
+    <id>1167</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T19:00:53-03:00</start_date>
+    <end_date>2024-12-17T20:00:53-03:00</end_date>
+    <category_id>TURNO_GENERAL</category_id>
+    <client_name>Sofía María Sanchez                               </client_name>
+    <id>1168</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T13:00:53-03:00</start_date>
+    <end_date>2024-12-11T14:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Héctor Quiroga Sanchez                            </client_name>
+    <id>1169</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T14:00:53-03:00</start_date>
+    <end_date>2024-12-11T15:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Héctor Román María Sanchez Perez                  </client_name>
+    <id>1170</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T16:00:53-03:00</start_date>
+    <end_date>2024-12-11T17:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Pepe Héctor Esteban García Marquez                </client_name>
+    <id>1171</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T18:00:53-03:00</start_date>
+    <end_date>2024-12-11T19:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Sofía Lucas García Sanchez                        </client_name>
+    <id>1172</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T19:00:53-03:00</start_date>
+    <end_date>2024-12-11T20:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Román María Esteban Sanchez Quiroga               </client_name>
+    <id>1173</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T13:00:53-03:00</start_date>
+    <end_date>2024-12-12T14:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>María Lucas García                                </client_name>
+    <id>1174</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T15:00:53-03:00</start_date>
+    <end_date>2024-12-12T16:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>María Sanchez Perez                               </client_name>
+    <id>1175</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T16:00:53-03:00</start_date>
+    <end_date>2024-12-12T17:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Pepe María Quiroga García                         </client_name>
+    <id>1176</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T13:00:53-03:00</start_date>
+    <end_date>2024-12-13T14:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>María Lucas Héctor García                         </client_name>
+    <id>1177</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T14:00:53-03:00</start_date>
+    <end_date>2024-12-13T15:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Esteban María Quiroga Perez Soso                  </client_name>
+    <id>1178</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T15:00:53-03:00</start_date>
+    <end_date>2024-12-13T16:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Lucas Pepe Héctor Quiroga Soso                    </client_name>
+    <id>1179</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T17:00:53-03:00</start_date>
+    <end_date>2024-12-13T18:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Lucas Héctor María Marquez                        </client_name>
+    <id>1180</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T19:00:53-03:00</start_date>
+    <end_date>2024-12-14T20:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Lucas Perez                                       </client_name>
+    <id>1181</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T13:00:53-03:00</start_date>
+    <end_date>2024-12-15T14:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Héctor Sanchez                                    </client_name>
+    <id>1182</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T15:00:53-03:00</start_date>
+    <end_date>2024-12-15T16:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Sofía Lucas Perez                                 </client_name>
+    <id>1183</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T16:00:53-03:00</start_date>
+    <end_date>2024-12-15T17:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>María Lucas Sofía Perez                           </client_name>
+    <id>1184</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T17:00:53-03:00</start_date>
+    <end_date>2024-12-15T18:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Román Esteban María Perez                         </client_name>
+    <id>1185</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T18:00:53-03:00</start_date>
+    <end_date>2024-12-15T19:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Sofía María Soso Sanchez Poncho                   </client_name>
+    <id>1186</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T13:00:53-03:00</start_date>
+    <end_date>2024-12-16T14:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Sofía Perez Soso                                  </client_name>
+    <id>1187</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T15:00:53-03:00</start_date>
+    <end_date>2024-12-16T16:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Román García Marquez                              </client_name>
+    <id>1188</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T18:00:53-03:00</start_date>
+    <end_date>2024-12-16T19:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Lucas Pepe García Quiroga Marquez                 </client_name>
+    <id>1189</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T19:00:53-03:00</start_date>
+    <end_date>2024-12-16T20:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Héctor Sanchez Soso Quiroga                       </client_name>
+    <id>1190</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T14:00:53-03:00</start_date>
+    <end_date>2024-12-17T15:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Héctor García Perez Soso                          </client_name>
+    <id>1191</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T16:00:53-03:00</start_date>
+    <end_date>2024-12-17T17:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Esteban Soso                                      </client_name>
+    <id>1192</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T17:00:53-03:00</start_date>
+    <end_date>2024-12-17T18:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Esteban Sanchez                                   </client_name>
+    <id>1193</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T19:00:53-03:00</start_date>
+    <end_date>2024-12-17T20:00:53-03:00</end_date>
+    <category_id>CAJERO</category_id>
+    <client_name>Pepe Poncho                                       </client_name>
+    <id>1194</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T15:00:53-03:00</start_date>
+    <end_date>2024-12-11T16:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Héctor María Quiroga                              </client_name>
+    <id>1195</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T17:00:53-03:00</start_date>
+    <end_date>2024-12-11T18:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Pepe Poncho Sanchez                               </client_name>
+    <id>1196</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T13:00:53-03:00</start_date>
+    <end_date>2024-12-12T14:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Pepe Soso                                         </client_name>
+    <id>1197</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T14:00:53-03:00</start_date>
+    <end_date>2024-12-12T15:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Román Soso                                        </client_name>
+    <id>1198</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T16:00:53-03:00</start_date>
+    <end_date>2024-12-12T17:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Sofía García Poncho                               </client_name>
+    <id>1199</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T13:00:53-03:00</start_date>
+    <end_date>2024-12-13T14:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>María Lucas Marquez                               </client_name>
+    <id>1200</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T14:00:53-03:00</start_date>
+    <end_date>2024-12-13T15:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Esteban Marquez                                   </client_name>
+    <id>1201</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T16:00:53-03:00</start_date>
+    <end_date>2024-12-13T17:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Héctor Esteban Poncho Marquez                     </client_name>
+    <id>1202</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T17:00:53-03:00</start_date>
+    <end_date>2024-12-13T18:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Román Sofía Sanchez                               </client_name>
+    <id>1203</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T13:00:53-03:00</start_date>
+    <end_date>2024-12-14T14:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>María Esteban Sofía Poncho                        </client_name>
+    <id>1204</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T16:00:53-03:00</start_date>
+    <end_date>2024-12-14T17:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Pepe Perez Poncho Soso                            </client_name>
+    <id>1205</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T18:00:53-03:00</start_date>
+    <end_date>2024-12-14T19:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Román Sofía Lucas Marquez                         </client_name>
+    <id>1206</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T19:00:53-03:00</start_date>
+    <end_date>2024-12-14T20:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Sofía Soso Quiroga Perez                          </client_name>
+    <id>1207</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T16:00:53-03:00</start_date>
+    <end_date>2024-12-15T17:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Héctor Sofía Román García                         </client_name>
+    <id>1208</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T18:00:53-03:00</start_date>
+    <end_date>2024-12-15T19:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Esteban Perez Poncho                              </client_name>
+    <id>1209</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T19:00:53-03:00</start_date>
+    <end_date>2024-12-15T20:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Lucas Sanchez Marquez                             </client_name>
+    <id>1210</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T13:00:53-03:00</start_date>
+    <end_date>2024-12-16T14:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Román Sofía García                                </client_name>
+    <id>1211</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T14:00:53-03:00</start_date>
+    <end_date>2024-12-16T15:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Héctor Pepe Soso                                  </client_name>
+    <id>1212</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T15:00:53-03:00</start_date>
+    <end_date>2024-12-16T16:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Román Sofía Marquez Quiroga                       </client_name>
+    <id>1213</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T18:00:53-03:00</start_date>
+    <end_date>2024-12-16T19:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Héctor Esteban Sanchez                            </client_name>
+    <id>1214</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T13:00:53-03:00</start_date>
+    <end_date>2024-12-17T14:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Héctor Esteban Marquez                            </client_name>
+    <id>1215</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T15:00:53-03:00</start_date>
+    <end_date>2024-12-17T16:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Román Perez Quiroga                               </client_name>
+    <id>1216</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T18:00:53-03:00</start_date>
+    <end_date>2024-12-17T19:00:53-03:00</end_date>
+    <category_id>ATENCION_AL_CLIENTE</category_id>
+    <client_name>Sofía Esteban Soso                                </client_name>
+    <id>1217</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T13:00:53-03:00</start_date>
+    <end_date>2024-12-11T14:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Sofía María Sanchez Quiroga                       </client_name>
+    <id>1218</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T14:00:53-03:00</start_date>
+    <end_date>2024-12-11T15:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Héctor María García                               </client_name>
+    <id>1219</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T15:00:53-03:00</start_date>
+    <end_date>2024-12-11T16:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Héctor Perez García                               </client_name>
+    <id>1220</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T16:00:53-03:00</start_date>
+    <end_date>2024-12-11T17:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Román Poncho Marquez Quiroga                      </client_name>
+    <id>1221</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T18:00:53-03:00</start_date>
+    <end_date>2024-12-11T19:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Román García Poncho Quiroga                       </client_name>
+    <id>1222</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T19:00:53-03:00</start_date>
+    <end_date>2024-12-11T20:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Román Poncho Quiroga                              </client_name>
+    <id>1223</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T13:00:53-03:00</start_date>
+    <end_date>2024-12-12T14:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Lucas Sanchez                                     </client_name>
+    <id>1224</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T15:00:53-03:00</start_date>
+    <end_date>2024-12-12T16:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Sofía Román Lucas Poncho                          </client_name>
+    <id>1225</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T16:00:53-03:00</start_date>
+    <end_date>2024-12-12T17:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>María Pepe Marquez Quiroga                        </client_name>
+    <id>1226</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T17:00:53-03:00</start_date>
+    <end_date>2024-12-12T18:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Sofía Pepe Soso Sanchez Marquez                   </client_name>
+    <id>1227</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T18:00:53-03:00</start_date>
+    <end_date>2024-12-12T19:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Sofía Soso Poncho                                 </client_name>
+    <id>1228</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T13:00:53-03:00</start_date>
+    <end_date>2024-12-13T14:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Lucas Marquez García                              </client_name>
+    <id>1229</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T14:00:53-03:00</start_date>
+    <end_date>2024-12-13T15:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>María Pepe Poncho Soso                            </client_name>
+    <id>1230</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T17:00:53-03:00</start_date>
+    <end_date>2024-12-13T18:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Pepe Marquez                                      </client_name>
+    <id>1231</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T19:00:53-03:00</start_date>
+    <end_date>2024-12-13T20:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Lucas Marquez García                              </client_name>
+    <id>1232</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T14:00:53-03:00</start_date>
+    <end_date>2024-12-14T15:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Pepe María Héctor Perez                           </client_name>
+    <id>1233</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T16:00:53-03:00</start_date>
+    <end_date>2024-12-14T17:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Pepe Lucas Esteban García Perez Quiroga           </client_name>
+    <id>1234</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T18:00:53-03:00</start_date>
+    <end_date>2024-12-14T19:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Héctor Quiroga                                    </client_name>
+    <id>1235</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T19:00:53-03:00</start_date>
+    <end_date>2024-12-14T20:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Lucas Perez Sanchez                               </client_name>
+    <id>1236</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T13:00:53-03:00</start_date>
+    <end_date>2024-12-15T14:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>María Sofía Perez                                 </client_name>
+    <id>1237</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T17:00:53-03:00</start_date>
+    <end_date>2024-12-15T18:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Román Poncho                                      </client_name>
+    <id>1238</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T18:00:53-03:00</start_date>
+    <end_date>2024-12-15T19:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Esteban Pepe Sofía Marquez                        </client_name>
+    <id>1239</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T19:00:53-03:00</start_date>
+    <end_date>2024-12-15T20:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Román Lucas Héctor García Poncho                  </client_name>
+    <id>1240</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T13:00:53-03:00</start_date>
+    <end_date>2024-12-16T14:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Esteban Perez                                     </client_name>
+    <id>1241</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T16:00:53-03:00</start_date>
+    <end_date>2024-12-16T17:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Román Sofía Perez Marquez                         </client_name>
+    <id>1242</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T18:00:53-03:00</start_date>
+    <end_date>2024-12-16T19:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Héctor Poncho Soso                                </client_name>
+    <id>1243</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T16:00:53-03:00</start_date>
+    <end_date>2024-12-17T17:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Pepe García Perez Poncho                          </client_name>
+    <id>1244</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-17T19:00:53-03:00</start_date>
+    <end_date>2024-12-17T20:00:53-03:00</end_date>
+    <category_id>OPERACION</category_id>
+    <client_name>Héctor Quiroga Marquez Sanchez                    </client_name>
+    <id>1245</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T15:00:53-03:00</start_date>
+    <end_date>2024-12-11T16:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Lucas María Esteban Marquez                       </client_name>
+    <id>1246</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T17:00:53-03:00</start_date>
+    <end_date>2024-12-11T18:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Pepe Héctor Marquez                               </client_name>
+    <id>1247</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T19:00:53-03:00</start_date>
+    <end_date>2024-12-11T20:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>María Marquez                                     </client_name>
+    <id>1248</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T14:00:53-03:00</start_date>
+    <end_date>2024-12-12T15:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Esteban Román Lucas Perez García                  </client_name>
+    <id>1249</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T16:00:53-03:00</start_date>
+    <end_date>2024-12-12T17:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Héctor Soso Marquez                               </client_name>
+    <id>1250</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T19:00:53-03:00</start_date>
+    <end_date>2024-12-12T20:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Román Perez                                       </client_name>
+    <id>1251</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T14:00:53-03:00</start_date>
+    <end_date>2024-12-13T15:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>María Lucas Marquez                               </client_name>
+    <id>1252</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T17:00:53-03:00</start_date>
+    <end_date>2024-12-13T18:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Sofía García Sanchez Quiroga                      </client_name>
+    <id>1253</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T19:00:53-03:00</start_date>
+    <end_date>2024-12-13T20:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Sofía Quiroga                                     </client_name>
+    <id>1254</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T14:00:53-03:00</start_date>
+    <end_date>2024-12-14T15:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Román Sofía Poncho Marquez                        </client_name>
+    <id>1255</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T17:00:53-03:00</start_date>
+    <end_date>2024-12-14T18:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Pepe Román Quiroga Poncho García                  </client_name>
+    <id>1256</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T13:00:53-03:00</start_date>
+    <end_date>2024-12-15T14:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Sofía Sanchez                                     </client_name>
+    <id>1257</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T17:00:53-03:00</start_date>
+    <end_date>2024-12-15T18:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Sofía Marquez                                     </client_name>
+    <id>1258</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-15T18:00:53-03:00</start_date>
+    <end_date>2024-12-15T19:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Román Soso                                        </client_name>
+    <id>1259</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T15:00:53-03:00</start_date>
+    <end_date>2024-12-16T16:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Esteban Sanchez                                   </client_name>
+    <id>1260</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T16:00:53-03:00</start_date>
+    <end_date>2024-12-16T17:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Román García                                      </client_name>
+    <id>1261</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T18:00:53-03:00</start_date>
+    <end_date>2024-12-16T19:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>María Sofía Lucas García                          </client_name>
+    <id>1262</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-16T19:00:53-03:00</start_date>
+    <end_date>2024-12-16T20:00:53-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>Sofía Sanchez                                     </client_name>
+    <id>1263</id>
+    <created_by>161</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T12:00:00-03:00</start_date>
+    <end_date>2024-12-11T13:00:00-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>asdf                                              </client_name>
+    <id>1264</id>
+    <created_by>167</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-11T13:21:00-03:00</start_date>
+    <end_date>2024-12-11T14:21:00-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>asdf                                              </client_name>
+    <id>1265</id>
+    <created_by>167</created_by>
+  </Table>
+  <Table>
+    <duration>33</duration>
+    <start_date>2024-12-11T14:27:00-03:00</start_date>
+    <end_date>2024-12-11T15:00:00-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>asdf                                              </client_name>
+    <id>1266</id>
+    <created_by>167</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T10:00:00-03:00</start_date>
+    <end_date>2024-12-12T11:00:00-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>sadf                                              </client_name>
+    <id>1267</id>
+    <created_by>167</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T11:00:00-03:00</start_date>
+    <end_date>2024-12-12T12:00:00-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>asdf                                              </client_name>
+    <id>1268</id>
+    <created_by>167</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-12T12:00:00-03:00</start_date>
+    <end_date>2024-12-12T13:00:00-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>asdf                                              </client_name>
+    <id>1269</id>
+    <created_by>167</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-13T10:00:00-03:00</start_date>
+    <end_date>2024-12-13T11:00:00-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>ffffff                                            </client_name>
+    <id>1270</id>
+    <created_by>167</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-14T10:10:00-03:00</start_date>
+    <end_date>2024-12-14T11:10:00-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>sssss                                             </client_name>
+    <id>1271</id>
+    <created_by>167</created_by>
+  </Table>
+  <Table>
+    <duration>59</duration>
+    <start_date>2024-12-16T10:00:00-03:00</start_date>
+    <end_date>2024-12-16T10:59:00-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>asdfasdfadsf                                      </client_name>
+    <id>1272</id>
+    <created_by>167</created_by>
+  </Table>
+  <Table>
+    <duration>60</duration>
+    <start_date>2024-12-20T10:00:00-03:00</start_date>
+    <end_date>2024-12-20T11:00:00-03:00</end_date>
+    <category_id>BAJA_CUENTA</category_id>
+    <client_name>cccccc                                            </client_name>
+    <id>1273</id>
+    <created_by>167</created_by>
+  </Table>
+</NewDataSet>

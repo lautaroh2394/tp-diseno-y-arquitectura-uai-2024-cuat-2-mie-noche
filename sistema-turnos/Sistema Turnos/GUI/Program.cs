@@ -23,7 +23,7 @@ namespace GUI
             Application.SetCompatibleTextRenderingDefault(false);
             BLL.ConfigManager.SetConnectionStringFromConfigurationFile();
             Login formLogin = new Login();
-            bool debug = true;
+            bool debug = false;
             if (debug) BLL.SessionManager.SetCurrentUserByUsername("fulladmin");
             else formLogin.ShowDialog();
 
@@ -31,6 +31,7 @@ namespace GUI
                 Application.Exit();
             else Application.Run(new MainMenu());
 
+            /*
             SqlConnection dbcn = DAL.DBConnectionManager.CreateSqlConnection();
             dbcn.Open();
             dbcn.Close();
@@ -48,7 +49,7 @@ namespace GUI
             Console.WriteLine("exito");
             List<BE.UserPermission> userPermissions = new BLL.Users().GetUserPermissions(87);
             Console.WriteLine($"userPermissions : {userPermissions.Count}, {String.Join(", ", userPermissions.Select(p => p.id))}");
-
+            /*
             int sqlScriptReexecutions = 3;
             BE.User user = new BLL.Users().GetUser(127 + (sqlScriptReexecutions * 6));
             Console.WriteLine("username:");
@@ -60,6 +61,7 @@ namespace GUI
             Console.WriteLine($"isValid: {isValid}");
             isValid = BLL.Authenticator.Authenticate("buscador", "no deberia autorizar");
             Console.WriteLine($"isValid: {isValid}");
+            */
         }            
     }
 }

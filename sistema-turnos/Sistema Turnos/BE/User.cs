@@ -25,6 +25,21 @@ namespace BE
         {
             return this.permissions.Any(p => p.id.Equals(permission));
         }
+
+        public bool CanEditUsers()
+        {
+            return this.HasPermissionById("ADMIN") || this.HasPermissionById("EDITAR_USUARIOS");
+        }
+
+        public bool CanEditReservations()
+        {
+            return this.HasPermissionById("RESERVA");
+        }
+
+        public bool CanSeeUsers()
+        {
+            return this.HasPermissionById("ADMIN") || this.HasPermissionById("VER_USUARIOS");
+        }
     }
 
     public class UserPermission

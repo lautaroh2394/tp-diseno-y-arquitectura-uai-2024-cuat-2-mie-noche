@@ -34,7 +34,7 @@ namespace GUI
         // TODO - Al apretar X no cierra la aplicación (ahora esto no hace nada porque no se abre desde MainMenu)
         private void Login_FormClosed(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)

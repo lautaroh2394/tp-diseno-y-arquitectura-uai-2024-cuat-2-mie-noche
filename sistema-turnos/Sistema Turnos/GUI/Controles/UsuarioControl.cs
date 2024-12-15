@@ -30,11 +30,12 @@ namespace GUI
                 new object[] {"RESERVA", this.checkBoxReserva },
                 new object[] {"CREAR_USUARIO", this.checkBoxCrearUsuario },
                 new object[] {"EDITAR_USUARIO", this.checkBoxEditarUsuario },
-                new object[] {"VER_USUARIO", this.checkBoxVerUsuario },
+                new object[] {"VER_USUARIOS", this.checkBoxVerUsuario },
                 new object[] {"ADMIN", this.checkBoxAdmin}
             };
             this.mode = mode;
             if (mode == UsuarioMode.Read) Disable();
+            if (mode == UsuarioMode.Write && !SessionManager.GetCurrentUser().CanEditUsers()) DisablePermissions();
             SetValues();
             SetEvents();
         }
@@ -51,6 +52,15 @@ namespace GUI
             }
 
             button1.Hide();
+        }
+
+        private void DisablePermissions()
+        {
+            foreach (var item in this.permissionBoxes)
+            {
+                CheckBox checkbox = (CheckBox)item[1];
+                checkbox.Enabled = false;
+            }
         }
 
         private void SetValues()
@@ -73,30 +83,33 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BE.User u = usuario;
+            bool isNewUser = usuario == null;
+            BE.User u;
             if (!this.Validate()) return;
-            string username = textBox1.Text;
+            
             List<BE.UserPermission> permissions = new List<BE.UserPermission>();
-            IEnumerable<BE.UserPermission> permissions1 = (
+            IEnumerable<BE.UserPermission> mappedPermissions = (
                 permissionBoxes
                     .Where(p => ((CheckBox)p[1]).Checked)
                     .Select(p => new BE.UserPermission((string)p[0], (string)p[0], (string)p[0]))
             );
-            foreach (BE.UserPermission permission in permissions1)
-            {
-                permissions.Add(permission);
-            }
+            foreach (BE.UserPermission permission in mappedPermissions) {permissions.Add(permission);}
 
-            string password = Authenticator.GetInstance().HashPassword(textBox2.Text);
-            u = new BE.User(0, username, permissions, password);
-            if (usuario == null)
+            string password = textBox2.Text.Length > 0 ? Authenticator.GetInstance().HashPassword(textBox2.Text) : null;
+            string username = textBox1.Text;
+
+            if (isNewUser)
             {
-                new BLL.Users().CreateUser(usuario);
+                u = new BE.User(0, username, permissions, password);
+                int fa = new BLL.Users().CreateUser(u);
+                if (fa == 0) { MessageBox.Show("No se pudo actualizar"); return; }
                 MessageBox.Show("Usuario creado");
             }
             else
             {
-                new BLL.Users().UpdateUser(usuario);
+                u = new BE.User(usuario.id, username, permissions, password);
+                int fa = new BLL.Users().UpdateUser(u);
+                if (fa == 0) { MessageBox.Show("No se pudo actualizar"); return; }
                 MessageBox.Show("Usuario actualizado");
             }
             this.Close();

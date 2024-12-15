@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,6 @@ namespace GUI
 {
     public partial class ProfileControl : UserControl
     {
-        GUI.UsuarioControl usuarioControl1;
         public ProfileControl()
         {
             InitializeComponent();

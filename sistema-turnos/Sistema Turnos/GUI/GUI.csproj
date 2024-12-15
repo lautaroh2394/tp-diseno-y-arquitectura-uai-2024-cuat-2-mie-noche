@@ -46,17 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminControl.cs">
+    <Compile Include="Controles\AdminControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AdminControl.Designer.cs">
+    <Compile Include="Controles\AdminControl.Designer.cs">
       <DependentUpon>AdminControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="CategoriesSelector.cs">
+    <Compile Include="Controles\CategoriesSelector.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CategoriesSelector.Designer.cs">
+    <Compile Include="Controles\CategoriesSelector.Designer.cs">
       <DependentUpon>CategoriesSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\DataGridViewWithExport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\DataGridViewWithExport.Designer.cs">
+      <DependentUpon>DataGridViewWithExport.cs</DependentUpon>
     </Compile>
     <Compile Include="GUIFactoryForUser.cs" />
     <Compile Include="MainMenu.cs">
@@ -71,22 +77,22 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MakeReservationsControl.cs">
+    <Compile Include="Controles\MakeReservationsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MakeReservationsControl.Designer.cs">
+    <Compile Include="Controles\MakeReservationsControl.Designer.cs">
       <DependentUpon>MakeReservationsControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="NextReservationsControl.cs">
+    <Compile Include="Controles\NextReservationsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NextReservationsControl.Designer.cs">
+    <Compile Include="Controles\NextReservationsControl.Designer.cs">
       <DependentUpon>NextReservationsControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfileControl.cs">
+    <Compile Include="Controles\ProfileControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ProfileControl.Designer.cs">
+    <Compile Include="Controles\ProfileControl.Designer.cs">
       <DependentUpon>ProfileControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -97,10 +103,10 @@
     <Compile Include="Reservation.Designer.cs">
       <DependentUpon>Reservation.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchReservationsControl.cs">
+    <Compile Include="Controles\SearchReservationsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SearchReservationsControl.Designer.cs">
+    <Compile Include="Controles\SearchReservationsControl.Designer.cs">
       <DependentUpon>SearchReservationsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">
@@ -109,17 +115,20 @@
     <Compile Include="Usuario.Designer.cs">
       <DependentUpon>Usuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="UsuarioControl.cs">
+    <Compile Include="Controles\UsuarioControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UsuarioControl.Designer.cs">
+    <Compile Include="Controles\UsuarioControl.Designer.cs">
       <DependentUpon>UsuarioControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminControl.resx">
+    <EmbeddedResource Include="Controles\AdminControl.resx">
       <DependentUpon>AdminControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CategoriesSelector.resx">
+    <EmbeddedResource Include="Controles\CategoriesSelector.resx">
       <DependentUpon>CategoriesSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\DataGridViewWithExport.resx">
+      <DependentUpon>DataGridViewWithExport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -127,13 +136,13 @@
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MakeReservationsControl.resx">
+    <EmbeddedResource Include="Controles\MakeReservationsControl.resx">
       <DependentUpon>MakeReservationsControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NextReservationsControl.resx">
+    <EmbeddedResource Include="Controles\NextReservationsControl.resx">
       <DependentUpon>NextReservationsControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProfileControl.resx">
+    <EmbeddedResource Include="Controles\ProfileControl.resx">
       <DependentUpon>ProfileControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -148,13 +157,13 @@
     <EmbeddedResource Include="Reservation.resx">
       <DependentUpon>Reservation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SearchReservationsControl.resx">
+    <EmbeddedResource Include="Controles\SearchReservationsControl.resx">
       <DependentUpon>SearchReservationsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuario.resx">
       <DependentUpon>Usuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UsuarioControl.resx">
+    <EmbeddedResource Include="Controles\UsuarioControl.resx">
       <DependentUpon>UsuarioControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
